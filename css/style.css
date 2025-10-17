@@ -1,0 +1,154 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* ===== WARNA UTAMA PROFESIONAL ===== */
+.text-primary-custom {
+  color: #3B82F6 !important;
+}
+
+.btn-primary-custom {
+  background-color: #3B82F6;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 25px;
+  transition: 0.3s;
+}
+
+.btn-primary-custom:hover {
+  background-color: #2563EB;
+  color: white;
+}
+
+.section-title {
+  text-align: left;
+  position: relative;
+}
+
+.section-title .underline {
+  width: 80px;
+  height: 4px;
+  background-color: #3B82F6;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+/* ===== CARD GLOBAL ===== */
+.card {
+  border-radius: 15px;
+  background: #fff;
+  border-top: 4px solid #3B82F6;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+
+.hover-card {
+  transition: all 0.4s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.25);
+  background: linear-gradient(180deg, #fff, #E0E7FF);
+}
+
+/* ===== SECTION BACKGROUND ===== */
+#pendidikan,
+#pengalaman,
+#organisasi,
+#skill,
+#kontak {
+  background: linear-gradient(to bottom right, #fff, #E0E7FF);
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to bottom right, #fff, #E0E7FF);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #3B82F6 !important;
+}
+
+footer {
+  font-size: 14px;
+  color: #3B82F6;
+}
+
+/* ===== CARD HEIGHT ===== */
+#pendidikan .card,
+#pengalaman .card,
+#organisasi .card,
+#skill .card {
+  min-height: 180px;
+}
+
+/* ===== ICON & TEXT SKILL ===== */
+#skill .card i {
+  font-size: 2.2rem;
+  color: #3B82F6;
+}
+
+#skill .card h5 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  color: #3B82F6;
+}
+
+#skill .card p {
+  font-size: 0.9rem;
+  color: #4B5563;
+}
+
+/* ===== TEKS RIWAYAT & KONTAK ===== */
+#pendidikan .card p,
+#pengalaman .card p,
+#organisasi .card p,
+#kontak p,
+#kontak a {
+  color: #3B82F6;
+}
+
+/* ===== ANIMASI AOS SMOOTH ===== */
+[data-aos] {
+  transition-property: transform, opacity !important;
+  transition-duration: 0.8s !important;
+}
+
+/* ===== RESPONSIF ===== */
+@media (max-width: 768px) {
+  #pendidikan .card,
+  #pengalaman .card,
+  #organisasi .card,
+  #skill .card {
+    min-height: 150px;
+  }
+
+  #skill .card i {
+    font-size: 1.8rem;
+  }
+
+  #skill .card h5 {
+    font-size: 0.95rem;
+  }
+
+  #skill .card p {
+    font-size: 0.85rem;
+  }
+}
+
+/* ==== FIX LINK KONTAK ==== */
+#kontak a {
+  position: relative;
+  z-index: 5;
+  pointer-events: auto;
+}
+
+#kontak {
+  position: relative;
+  z-index: 1;
+}
